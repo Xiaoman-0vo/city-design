@@ -1,0 +1,7 @@
+{
+  "project_root": null,
+  "mcp_python": null,
+  "applications": {},
+  "qgis": {},
+  "note": "Optional private configuration. Use --project for normal work. Paths may be absolute or project_root/mcp_python relative to this configuration file. Do not put credentials here."
+}

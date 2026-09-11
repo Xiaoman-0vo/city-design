@@ -1,0 +1,16 @@
+{
+  "drawing_type": "master_plan",
+  "electronic_submission": false,
+  "title": "合成案例城市总体规划图",
+  "drawing_boundary": true,
+  "north_arrow": true,
+  "wind_rose": true,
+  "numeric_scale": "1:500",
+  "scale_bar": true,
+  "planning_period": "教学合成案例",
+  "legend": true,
+  "signature": "TEST ONLY",
+  "compilation_date": "2026-09-09",
+  "title_block": true,
+  "note": "仅测试清单检查器，不表示该图属于真实总体规划成果。"
+}

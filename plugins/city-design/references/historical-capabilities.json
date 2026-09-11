@@ -1,0 +1,103 @@
+{
+  "version": "0.2.0",
+  "verified_on": "2026-09-09",
+  "scope": "Synthetic four rectangular buildings, metre local engineering frame, floors 10/10/10/10 to 8/12/8/12",
+  "cross_application": "VERIFIED_SYNTHETIC",
+  "native_gh": "REOPENED_AND_SOLVED",
+  "pdf": "VERIFIED_GUI_MANUAL_AUTOMATION_ROUTE",
+  "offline_tests": 37,
+  "plugin_tests": 7,
+  "saved_run_assessor": "SIX_CHECKS_PASS_ON_ACCEPTANCE02",
+  "standards_manifest_checker": "SEVEN_RULES_POSITIVE_NEGATIVE_AND_BLOCKED_TESTED",
+  "unverified": [
+    "Real site and jurisdiction acceptance",
+    "General arbitrary building geometry",
+    "Unattended general-purpose GUI printing",
+    "Full Chinese drawing standards conformance",
+    "License entitlement"
+  ],
+  "evidence_files": [
+    {
+      "path": "runs/acceptance02_workflow/verification.json",
+      "sha256": "96d1592e1063c6908245e14865703af58e431d9a3a579de3fd66a646ffe8bc00"
+    },
+    {
+      "path": "reports/mac_tests_with_adapters.txt",
+      "sha256": "d16ca0e58a553912449228c3216b843856d469cc8e3db56fae43f62c34192600"
+    },
+    {
+      "path": "runs/acceptance02_rhino_revised/design.3dm",
+      "sha256": "0201d6a70042e60241c435ee72d196e21d78933dd42ffbb20700bcf876fc3c9b"
+    },
+    {
+      "path": "runs/acceptance02_gh/revised.gh",
+      "sha256": "c5dc9ba86a46476aeaf3e3de34755a394bde9c185ac74c2f258cd4b8da59d19c"
+    },
+    {
+      "path": "runs/acceptance02_qgis_revised/design.qgz",
+      "sha256": "b6df4e71a7113dbaabf51bb0867a888822daa3d15ddaed3687a85b194abb85c8"
+    },
+    {
+      "path": "runs/acceptance02_qgis_revised/design.gpkg",
+      "sha256": "0e62badf31e35a546194d3a78d642bcd0abc5148077c52fa782c355277243c94"
+    },
+    {
+      "path": "runs/acceptance02_cad_revised/design.dwg",
+      "sha256": "314756973eeb6a7dd005bd4cbab2c0ea036c0c7dbeae01599f3af0746ea26636"
+    },
+    {
+      "path": "runs/cad_gui_publish_001/cad-acceptance-A3.pdf",
+      "sha256": "0f5a85fb179a2cbe3c500dc81db0ae92a31697364e250a10efb41c68678cd13a"
+    },
+    {
+      "path": "reports/plugin_assessment_acceptance02.json",
+      "sha256": "a776a146f68478a6619df38ca9896fb900b825c41c6dc0a695e5ad90a63f0166"
+    },
+    {
+      "path": "reports/standards_check_positive.json",
+      "sha256": "42dfc3769b68c5a08b3772905cdbb710ce295470ed155a3a5751a1df8bbf3cba"
+    },
+    {
+      "path": "reports/standards_check_negative.json",
+      "sha256": "ca2075f80fc1c51c66a395ae834015a89ada3db8f294fe4937eb2160b257145b"
+    },
+    {
+      "path": "reports/standards_check_unconfirmed.json",
+      "sha256": "126917242ed5aa97e951dca6b1059c61cdddf327a34e6a31015b8ab4729d5087"
+    }
+  ],
+  "photo_site": {
+    "status": "EXPERIMENTAL_PHOTO_ALIGNMENT_IN_PROGRESS",
+    "observed_on": "2026-09-11",
+    "scope": "371 ground photos; source metadata and Rhino native detail revision verified; site-wide same-view acceptance outstanding",
+    "workflow_reference": "references/photo-site-reconstruction.md",
+    "verified": [
+      "controlled source inventory and metadata linkage",
+      "original focal and image orientation propagated into derived reconstruction inputs",
+      "native detailed 3DM saved and reopened with metre units and valid definition geometry"
+    ],
+    "unverified": [
+      "site-wide camera placement and surveyed metric accuracy",
+      "same-view agreement of all buildings, courtyard and occluding vegetation"
+    ]
+  },
+  "ground_layout_and_placement": {
+    "status": "CASE_VALIDATED_NATIVE_PLACEMENT_CHECKS",
+    "observed_on": "2026-09-11",
+    "workflow_reference": "references/ground-layout-and-placement.md",
+    "practice": "PRACTICE-20260911-GROUND-PLACEMENT",
+    "execution": "Agent workflow instructions; native checks implemented for the retained project, not a universal plugin placement engine.",
+    "verified": [
+      "333 saved placement transforms matched planned transforms",
+      "68 primary building footprints and 760 tree centres checked against saved road",
+      "30 base ground objects reconciled; 740 local pathway samples checked",
+      "Same-input native reruns made no duplicate changes; legacy builder preserved current geometry"
+    ],
+    "unverified": [
+      "Physical accuracy of provisional ground layout and all site photographs",
+      "General automatic placement of arbitrary buildings and dependent objects",
+      "Complete public walkability or surveyed dimensions"
+    ]
+  },
+  "distribution_note": "Historical case receipt; referenced private artifacts are not bundled. Not an acceptance of the portable demo."
+}

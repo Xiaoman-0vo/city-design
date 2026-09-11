@@ -1,0 +1,20 @@
+{
+  "name": "city-design-public",
+  "interface": {
+    "displayName": "City Design Public"
+  },
+  "plugins": [
+    {
+      "name": "city-design",
+      "source": {
+        "source": "local",
+        "path": "./plugins/city-design"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

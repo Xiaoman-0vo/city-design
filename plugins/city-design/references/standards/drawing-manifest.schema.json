@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.city-design/drawing-manifest.schema.json",
+  "title": "City Design drawing facts manifest",
+  "type": "object",
+  "required": ["drawing_type", "electronic_submission"],
+  "properties": {
+    "drawing_type": {
+      "type": "string",
+      "enum": [
+        "master_plan", "partition_plan", "detailed_plan", "analysis_map", "site_plan",
+        "architectural_plan", "architectural_elevation", "architectural_section", "architectural_detail",
+        "municipal_plan", "municipal_profile", "municipal_section", "other"
+      ]
+    },
+    "electronic_submission": {"type": "boolean"},
+    "receiving_authority_adoption": {"type": "boolean"},
+    "synthetic": {"type": "boolean"},
+    "coordinate_system_source": {"enum": ["receiving_authority", "survey", "project_convention", null]},
+    "plane_coordinate_system": {"type": ["string", "null"]},
+    "elevation_system": {"type": ["string", "null"]},
+    "control_points": {
+      "type": "array",
+      "items": {"type": "array", "prefixItems": [{"type": "number"}, {"type": "number"}], "minItems": 2, "maxItems": 3}
+    },
+    "model_unit": {"enum": ["m", "mm", null]},
+    "export_unit": {"enum": ["m", "mm", null]},
+    "dimension_entities_native": {"type": "boolean"},
+    "dimension_precision": {"type": ["integer", "null"], "minimum": 0},
+    "whole_drawing_block": {"type": "boolean"},
+    "external_references": {"type": "integer", "minimum": 0},
+    "duplicate_lines": {"type": "integer", "minimum": 0},
+    "zero_length_lines": {"type": "integer", "minimum": 0},
+    "elevated_lines": {"type": "integer", "minimum": 0},
+    "anonymous_blocks": {"type": "integer", "minimum": 0},
+    "layer_mapping_verified": {"type": "boolean"},
+    "layer_contract_version": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

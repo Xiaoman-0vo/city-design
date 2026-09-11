@@ -1,0 +1,69 @@
+{
+  "checked_on": "2026-09-09",
+  "implementation_status": "MANIFEST_CHECK_IMPLEMENTED_NATIVE_CONFORMANCE_INCOMPLETE",
+  "rules": [
+    {
+      "id": "CN-PLAN-001",
+      "standard": "CJJ/T97-2003",
+      "clause": "1.0.2; 2.1.4",
+      "requirement": "先判断是否属于总体/分区规划；详细规划为参照适用，分析图不按本标准声称完整合规。",
+      "check": "检查图纸类型与采用声明",
+      "status": "MANIFEST_CHECK_IMPLEMENTED"
+    },
+    {
+      "id": "CN-PLAN-002",
+      "standard": "CJJ/T97-2003",
+      "clause": "2.1.5",
+      "requirement": "总体规划图核查标题、图界、方向和风象、数值比例及比例尺、期限、图例、署名、日期和图标等要素。",
+      "check": "图纸清单与渲染页面复核；真实方向/气象未知时不得编造",
+      "status": "MANIFEST_CHECK_IMPLEMENTED"
+    },
+    {
+      "id": "CN-SUBMIT-001",
+      "standard": "T/UPSC0002-2018",
+      "clause": "4.3",
+      "requirement": "采用受理部门规定的平面与高程系统。",
+      "check": "需受理部门坐标合同及至少三个控制点；synthetic成果不报批",
+      "status": "MANIFEST_CHECK_IMPLEMENTED"
+    },
+    {
+      "id": "CN-SUBMIT-002",
+      "standard": "T/UPSC0002-2018",
+      "clause": "4.4.1–4.4.3",
+      "requirement": "总图与所列市政图使用米；建筑平立剖及大样使用毫米。",
+      "check": "导出配置区分m与mm；尺寸与纸面比例检查，禁止直接改变主模型单位",
+      "status": "MANIFEST_CHECK_IMPLEMENTED"
+    },
+    {
+      "id": "CN-SUBMIT-003",
+      "standard": "T/UPSC0002-2018",
+      "clause": "4.5",
+      "requirement": "检查整图成块、外部参照、重复/零长线、带高度线及无名块。",
+      "check": "原生实体扫描；当前带高度的合成CAD模型不得作为该标准报批文件",
+      "status": "MANIFEST_CHECK_IMPLEMENTED_NATIVE_SCAN_PENDING"
+    },
+    {
+      "id": "CN-SUBMIT-004",
+      "standard": "T/UPSC0002-2018",
+      "clause": "4.6.1–4.6.3",
+      "requirement": "核查原生尺寸标注及米/毫米对应的标注精度。",
+      "check": "需要DIMENSION实体及精度设置回读，不能把普通TEXT当尺寸验证",
+      "status": "MANIFEST_CHECK_IMPLEMENTED_NATIVE_SCAN_PENDING"
+    },
+    {
+      "id": "CN-SUBMIT-005",
+      "standard": "T/UPSC0002-2018",
+      "clause": "5.1; 附录A",
+      "requirement": "采用完整图层内容、类型、颜色及命名表。",
+      "check": "按受理方采用版本建立映射；当前CODEX图层属于测试约定",
+      "status": "MANIFEST_CHECK_IMPLEMENTED_NATIVE_SCAN_PENDING"
+    }
+  ],
+  "project_conventions": [
+    {
+      "id": "LOCAL-DEMO-A3",
+      "value": "A3横向、1:500、100m比例尺、中文可读",
+      "authority": "现有四栋建筑测试的项目约定，不等同完整国标要求"
+    }
+  ]
+}

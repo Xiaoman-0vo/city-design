@@ -1,0 +1,19 @@
+{
+  "version": "0.3.0-alpha.1",
+  "release_status": "ALPHA",
+  "verification_date": "2026-09-11",
+  "core": "PORTABLE_STANDARD_LIBRARY",
+  "optional_3dm_sdk": "rhino3dm 8.32.2",
+  "native_application_connections": "USER_CONFIGURED_NOT_BUNDLED",
+  "historical_case_reference": "historical-capabilities.json",
+  "ground_layout_workflow": "ground-layout-and-placement.md",
+  "photo_workflow": "photo-site-reconstruction.md",
+  "delivery_workflow": "delivery-and-recovery.md",
+  "unverified": [
+    "Rhino 8 desktop acceptance",
+    "Windows native application automation",
+    "Universal building placement or full-site photo agreement",
+    "Complete statutory drawing compliance"
+  ],
+  "offline_test_receipt": "docs/VALIDATION.md"
+}

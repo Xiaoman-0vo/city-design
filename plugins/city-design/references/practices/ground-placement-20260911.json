@@ -1,0 +1,415 @@
+{
+  "id": "PRACTICE-20260911-GROUND-PLACEMENT",
+  "title": "道路斜向而对象沿旧网格摆放的定位修正",
+  "observed_on": "2026-09-11",
+  "result": "CASE_VALIDATED_NATIVE_PLACEMENT_CHECKS",
+  "root_cause": "Global object placement reused a fixed UV grid while roads retained independent slopes; local connection checks missed the site-frame mismatch.",
+  "workflow_reference": "references/ground-layout-and-placement.md",
+  "software": "Rhino WIP 9; saved Rhino 9 file",
+  "previous_model": "private-evidence/city_analysis_base_v05_review.3dm",
+  "source_sha256": "9894c03f53835b8eaa6e45a7af6cf27dbde6b60435c0a743389168d17771f13b",
+  "saved_native_readback": {
+    "status": "PASSED",
+    "model": "private-evidence/city_analysis_base_v06_review.3dm",
+    "model_sha256": "fa7422f9783763a2a8f0925fd1ac7ead0066914ccb9b1a6af6572fd7bdcd77e8",
+    "native_file_version": 9,
+    "top_objects": 1737,
+    "geometry_records": 18979,
+    "unit": "Meters",
+    "tolerance": 0.005,
+    "invalid_geometry": 0,
+    "checked_placement_objects": 333,
+    "max_placement_matrix_error": 0,
+    "source_v05_unchanged": true,
+    "road_geometry_unchanged": true,
+    "all_prior_guids_preserved": true,
+    "checked_reconciled_ground": 30,
+    "new_corner_connection": 1,
+    "local_path_samples": 740,
+    "local_paving_coverage": true,
+    "local_paths_clear_of_buildings_and_tree_bodies": true,
+    "access": "CONTROLLED_ACCESS_REMAINS_UNKNOWN_NO_PUBLIC_ROUTING_CLAIM",
+    "named_views": 28,
+    "limits": "Fixes model placement relative to current road geometry. Heights, road widths, hidden layouts and survey/georeferencing accuracy remain provisional; whole-site photo match not accepted."
+  },
+  "saved_geometry_audit": {
+    "status": "PASSED",
+    "model": "private-evidence/city_analysis_base_v06_review.3dm",
+    "model_sha256": "fa7422f9783763a2a8f0925fd1ac7ead0066914ccb9b1a6af6572fd7bdcd77e8",
+    "frame_id": "SITE_ANALYSIS_UV_FOR_PLACEMENT_CHECK",
+    "method": "Actual saved block geometry vertices recursively transformed into UV; primary body footprints unioned, compared to target placement and saved ROAD face loops. Road loops reused only after native geometry unchanged check.",
+    "input_hashes": {
+      "work/photo_intake/city_analysis/alignment_scene_v06.json": "ccb624fc031bc9453daeeda74ed3e2a0c194dec4b0cfbd18a34d4723896d37e9",
+      "work/photo_intake/city_analysis/alignment_ground_v05.json": "56e9125efe3011902f402af8e48c7a0e999de1acdd161b8a1225a94dac4a280c",
+      "outputs/photo_site_20260910_01/site_context_01/revision_03/city_analysis_01/alignment_mass_footprints_v06.json": "48316fd8546add4fc6adf4ab4a847b5d84ec6b5a0f3b633b056d50a2802eb4a3",
+      "outputs/photo_site_20260910_01/site_context_01/revision_03/city_analysis_01/native_readback_v06.json": "252c98cbd7b0ec00ee7e00dc73a1ea77e430d07e4e17ac72d841780c2d5b41c8"
+    },
+    "top_objects": 1737,
+    "building_footprints_checked": 68,
+    "tree_centres_checked": 760,
+    "footprint_symdiff_tolerance_nominal_m2": 0.08,
+    "max_footprint_symmetric_difference_nominal_m2": 0.0006652515930333064,
+    "footprint_comparison": [
+      {
+        "id": "B001",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "MG01",
+        "symmetric_difference_m2": 4.884981308350689e-14
+      },
+      {
+        "id": "S3330",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "S3331",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "S3332",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "S3333",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "S3334",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "S3335",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "S3336",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "S3337",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "E01",
+        "symmetric_difference_m2": 2.943503271025483e-12
+      },
+      {
+        "id": "E02",
+        "symmetric_difference_m2": 0.0
+      },
+      {
+        "id": "E03",
+        "symmetric_difference_m2": 6.88160639583657e-12
+      },
+      {
+        "id": "JG02",
+        "symmetric_difference_m2": 1.0200530220398217e-12
+      },
+      {
+        "id": "JG04",
+        "symmetric_difference_m2": 1.7047028848686173e-12
+      },
+      {
+        "id": "M01",
+        "symmetric_difference_m2": 0.0001233135228160754
+      },
+      {
+        "id": "M02",
+        "symmetric_difference_m2": 0.00020956617683776923
+      },
+      {
+        "id": "M03",
+        "symmetric_difference_m2": 0.00028923161305869206
+      },
+      {
+        "id": "M04",
+        "symmetric_difference_m2": 0.000238434470556854
+      },
+      {
+        "id": "MB01",
+        "symmetric_difference_m2": 8.251673015573876e-05
+      },
+      {
+        "id": "MB02",
+        "symmetric_difference_m2": 0.00020456541755147934
+      },
+      {
+        "id": "MB03",
+        "symmetric_difference_m2": 0.00016406233121864664
+      },
+      {
+        "id": "G01",
+        "symmetric_difference_m2": 2.979493452634108e-12
+      },
+      {
+        "id": "G02",
+        "symmetric_difference_m2": 2.1280754936015e-12
+      },
+      {
+        "id": "C01",
+        "symmetric_difference_m2": 2.792970317798244e-12
+      },
+      {
+        "id": "K01",
+        "symmetric_difference_m2": 2.1744737065607098e-12
+      },
+      {
+        "id": "JG01",
+        "symmetric_difference_m2": 4.0323300254385686e-12
+      },
+      {
+        "id": "JG03",
+        "symmetric_difference_m2": 2.9736213491560193e-12
+      },
+      {
+        "id": "WG01",
+        "symmetric_difference_m2": 2.7551294579097885e-12
+      },
+      {
+        "id": "WG02",
+        "symmetric_difference_m2": 2.9274360713316128e-12
+      },
+      {
+        "id": "WG03",
+        "symmetric_difference_m2": 1.2063030931138781e-12
+      },
+      {
+        "id": "U01",
+        "symmetric_difference_m2": 0.00019232863547258261
+      },
+      {
+        "id": "U02",
+        "symmetric_difference_m2": 0.0002477660397302914
+      },
+      {
+        "id": "R01",
+        "symmetric_difference_m2": 1.6236033939697617e-12
+      },
+      {
+        "id": "R02",
+        "symmetric_difference_m2": 3.266814664758093e-12
+      },
+      {
+        "id": "R03",
+        "symmetric_difference_m2": 9.051697197106798e-12
+      },
+      {
+        "id": "R04",
+        "symmetric_difference_m2": 1.0498335134645146e-12
+      },
+      {
+        "id": "R05",
+        "symmetric_difference_m2": 2.122504476236658e-12
+      },
+      {
+        "id": "R06",
+        "symmetric_difference_m2": 2.174735024311208e-12
+      },
+      {
+        "id": "R07",
+        "symmetric_difference_m2": 5.019949046382055e-12
+      },
+      {
+        "id": "R08",
+        "symmetric_difference_m2": 8.070021293923567e-12
+      },
+      {
+        "id": "A01",
+        "symmetric_difference_m2": 2.0961010704922955e-12
+      },
+      {
+        "id": "A02",
+        "symmetric_difference_m2": 2.0874469916599287e-12
+      },
+      {
+        "id": "A03",
+        "symmetric_difference_m2": 3.8764660343006145e-12
+      },
+      {
+        "id": "A04",
+        "symmetric_difference_m2": 2.074839442345854e-12
+      },
+      {
+        "id": "A05",
+        "symmetric_difference_m2": 1.8332002582610585e-12
+      },
+      {
+        "id": "A06",
+        "symmetric_difference_m2": 1.441371922901407e-12
+      },
+      {
+        "id": "A07",
+        "symmetric_difference_m2": 3.75877107217093e-12
+      },
+      {
+        "id": "A08",
+        "symmetric_difference_m2": 3.085134659278023e-12
+      },
+      {
+        "id": "A09",
+        "symmetric_difference_m2": 3.254285729781259e-12
+      },
+      {
+        "id": "A10",
+        "symmetric_difference_m2": 9.109157872444484e-12
+      },
+      {
+        "id": "A11",
+        "symmetric_difference_m2": 2.059835350919648e-12
+      },
+      {
+        "id": "A12",
+        "symmetric_difference_m2": 1.3252532843384396e-11
+      },
+      {
+        "id": "W01",
+        "symmetric_difference_m2": 6.863842827442568e-12
+      },
+      {
+        "id": "W02",
+        "symmetric_difference_m2": 9.819700608204585e-12
+      },
+      {
+        "id": "W03",
+        "symmetric_difference_m2": 7.865694940161855e-12
+      },
+      {
+        "id": "W04",
+        "symmetric_difference_m2": 6.870948254800169e-12
+      },
+      {
+        "id": "SW01",
+        "symmetric_difference_m2": 1.850608555287181e-11
+      },
+      {
+        "id": "PR01",
+        "symmetric_difference_m2": 6.847490181215943e-13
+      },
+      {
+        "id": "PR02",
+        "symmetric_difference_m2": 3.1816655332741087e-12
+      },
+      {
+        "id": "PR03",
+        "symmetric_difference_m2": 4.2663650390295516e-12
+      },
+      {
+        "id": "K02",
+        "symmetric_difference_m2": 0.0006652515930333064
+      },
+      {
+        "id": "SP01",
+        "symmetric_difference_m2": 6.350033487447445e-13
+      },
+      {
+        "id": "SP02",
+        "symmetric_difference_m2": 3.367972567502875e-12
+      },
+      {
+        "id": "SP03",
+        "symmetric_difference_m2": 3.4594549447319878e-12
+      },
+      {
+        "id": "NORTH_WHITE_MIDRISE_01",
+        "symmetric_difference_m2": 0.0006095415506313617
+      },
+      {
+        "id": "NORTH_WHITE_MIDRISE_02",
+        "symmetric_difference_m2": 0.0006617566627460773
+      },
+      {
+        "id": "PRIMARY_SCHOOL_PHOTO_FRONT",
+        "symmetric_difference_m2": 0.0006132883929577775
+      }
+    ],
+    "road_overlap_tolerance_nominal_m2": 0.05,
+    "building_pair_overlap_tolerance_nominal_m2": 0.1,
+    "tree_road_buffer_nominal_m": 0.22,
+    "unresolved_mass_road_overlaps": [],
+    "unresolved_mass_pairs": [],
+    "unresolved_tree_road_overlaps": [],
+    "primary_school_road_clearance_nominal_m": 4.509227566010151,
+    "road_union_nominal_m2": 79133.65200000005,
+    "known_reference_uncertainty": "Saved road and original source polygon differ by about 1270.94 nominal square metres at west Campus Road median; retained current road as provisional layout until photo review.",
+    "limits": [
+      "Checks model-internal placement only; not surveyed field dimensions or site-wide photo acceptance.",
+      "Footprints cover primary building bodies; balconies and canopies excluded.",
+      "Tree centres are inferred placements, not a field census; does not certify whole crown clearance.",
+      "Local pathway samples and access limitations are recorded separately in native_readback_v06.json."
+    ],
+    "work_frame_id": "SITE_LOCAL_XY_V02_PROVISIONAL",
+    "analysis_frame_transform": "UV = rotate working XY +50 degrees about world Z; nominal metre units."
+  },
+  "update_verification": {
+    "status": "PASSED_NATIVE_AND_LEGACY_PRESERVATION",
+    "changed_existing_geometry": 363,
+    "new_objects": 1,
+    "placement_rerun": {
+      "status": "APPLIED",
+      "updated": 0,
+      "unchanged": 333,
+      "top_objects": 1737,
+      "all_guids_preserved": true,
+      "block_shapes_and_heights_retained": true,
+      "road_geometry_untouched": true
+    },
+    "ground_rerun": {
+      "status": "APPLIED",
+      "batch": "ALIGNMENT_GROUND_06",
+      "added": 0,
+      "replaced": 0,
+      "archived": 0,
+      "unchanged": 33,
+      "top_objects": 1737,
+      "all_prior_ids_retained": true,
+      "source_file_untouched": true,
+      "geometry_role": "PHOTO_CONSTRAINED_NOMINAL_MODEL"
+    },
+    "legacy_generator_preserves_every_current_object_geometry": true,
+    "source_v05_unchanged": true,
+    "native_readback": "native_readback_v06.json",
+    "saved_spatial_audit": "alignment_saved_geometry_audit_v06.json"
+  },
+  "evidence_files": [
+    {
+      "path": "private-evidence/site_placement_v06.json",
+      "sha256": "a7e40c586645f45af04500f49efeccc53caaaed8c21974b4d50cf54b10e20d2e"
+    },
+    {
+      "path": "private-evidence/parameters_v06.json",
+      "sha256": "c9e9fccf309524a913dceec2914eca6ee1dc5c669f9cca1796d3560a1f9a1ccd"
+    },
+    {
+      "path": "private-evidence/native_readback_v06.json",
+      "sha256": "252c98cbd7b0ec00ee7e00dc73a1ea77e430d07e4e17ac72d841780c2d5b41c8"
+    },
+    {
+      "path": "private-evidence/alignment_saved_geometry_audit_v06.json",
+      "sha256": "b312cce516d07c22839318b7ab9ce8de02e23697e24440a583fab7ccc65fecb9"
+    },
+    {
+      "path": "private-evidence/update_verification_v06.json",
+      "sha256": "0d4a3a559fb05a9357bc64fa625e395df8dda3f0d2fea5e8e71c4ace99e3fc84"
+    },
+    {
+      "path": "private-evidence/old_street_alignment_v06.png",
+      "sha256": "ca20bbac4b3ef9f5d47a2e068c089e150f2bf08b25b47a49bf92d52e094dbf19"
+    },
+    {
+      "path": "private-evidence/school_road_alignment_v06.png",
+      "sha256": "6938eebc922d325181c6559ed73433b7021fca58c95f68eb221d77a8c10e7695"
+    },
+    {
+      "path": "private-evidence/site_alignment_plan_v06.png",
+      "sha256": "a0a01258adfb12c146005e0eb664b4dc780fba8cf9d6637c44992ea176e3b123"
+    }
+  ],
+  "visual_review": "Saved native plan images reviewed; frontage and attached ground now follow street/parcel frames.",
+  "limits": [
+    "Project checks and workflow rules only; no universal plugin alignment engine.",
+    "Current road basis retained provisionally; west Campus Road median differs from source by about 1270.94 nominal square metres and awaits photo review.",
+    "No site-wide photo acceptance, surveyed scale or public-routing acceptance."
+  ],
+  "public_evidence_availability": "Historical local evidence; model/photo files are not distributed. Hashes document lineage, not independently reproducible public acceptance."
+}

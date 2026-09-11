@@ -1,0 +1,18 @@
+{
+  "name": "city-design",
+  "version": "0.3.0-alpha.1",
+  "description": "照片辅助的城市分析底模工作流、独立示例、制图清单检查与 Rhino 8 兼容导出。实验版。",
+  "author": {
+    "name": "City Design"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "City Design",
+    "shortDescription": "城市设计工作流与可复现示例（Alpha）",
+    "longDescription": "提供 Codex 设计技能、独立合成示例与检查工具。三软件连接需用户配置；真实场地精度和跨平台原生操作需分别验收。",
+    "developerName": "City Design",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "使用 City Design 接手当前设计任务，检查受控工作副本、软件连接和适用制图标准，实际执行并保存可编辑成果，按原生回读结果验收。"
+  }
+}

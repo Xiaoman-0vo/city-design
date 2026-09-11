@@ -1,0 +1,83 @@
+{
+  "updated_on": "2026-09-11",
+  "method": "Promote only capabilities supported by retained inputs, native outputs and checks.",
+  "cases": [
+    {
+      "id": "PRACTICE-20260909-MICRO-NATIVE",
+      "title": "Mac 四栋建筑三软件原生联动",
+      "scope": "合成矩形建筑；本地工程坐标；10/10/10/10层调整为8/12/8/12层",
+      "result": "CROSS_APPLICATION_VERIFIED_SYNTHETIC",
+      "promoted": [
+        "Rhino 3DM 创建、保存与回读",
+        "Grasshopper GH 参数文件重开与求解",
+        "QGIS GPKG/QGZ 保存、重开与独立面积复核",
+        "AutoCAD DWG 写入与第二实例回读",
+        "稳定ID、楼层数、面积与三个非共线控制点的跨软件复核",
+        "AutoCAD 主窗口 A3 中文 PDF 出图"
+      ],
+      "not_promoted": [
+        "真实坐标转换",
+        "任意复杂建筑",
+        "施工图或法定报批合规",
+        "通用无人值守打印"
+      ],
+      "evidence": "runs/acceptance02_workflow/verification.json",
+      "assessment": "reports/plugin_assessment_acceptance02.json"
+    },
+    {
+      "id": "PRACTICE-20260909-STANDARDS-MANIFEST",
+      "title": "中国制图规则清单检查器正反测试",
+      "scope": "CJJ/T97-2003与T/UPSC0002-2018的7条首批映射；输入为声明清单",
+      "result": "MANIFEST_CHECK_VERIFIED",
+      "promoted": [
+        "总体规划图必要构成要素清单",
+        "电子报批采用状态阻塞",
+        "坐标来源与非共线控制点检查",
+        "按图纸类型区分米和毫米",
+        "二维几何、原生尺寸和图层合同的失败报告"
+      ],
+      "not_promoted": [
+        "直接扫描DWG/QGZ判断全部条款",
+        "四川或成都受理方采用性判断",
+        "完整标准符合性"
+      ],
+      "evidence": "reports/standards_check_negative.json"
+    },
+    {
+      "id": "PRACTICE-20260911-PHOTO-SITE",
+      "title": "照片信息保留及 Rhino 场地细化中的失败修正",
+      "scope": "371 张照片与现场形态细化；全场照片对位仍在进行",
+      "result": "WORKFLOW_PRECAUTIONS_SUPPORTED_SITE_ACCEPTANCE_PENDING",
+      "promoted": [
+        "原图到派生图的镜头及方向信息保留",
+        "同点位不同方向独立机位",
+        "原生文档绑定、单位、块定义和命名视图回读",
+        "照片形态、原生几何有效性和照片对位分别验收"
+      ],
+      "not_promoted": [
+        "无控制点的测量精度",
+        "所有照片机位可靠",
+        "全场模型与实际照片一致"
+      ],
+      "evidence": "references/photo-site-reconstruction.md"
+    },
+    {
+      "id": "PRACTICE-20260911-GROUND-PLACEMENT",
+      "title": "道路斜向而对象沿旧网格摆放的定位修正",
+      "scope": "真实项目的暂定道路/地块基准定位修正；现场准确性继续校核",
+      "result": "CASE_VALIDATED_NATIVE_PLACEMENT_CHECKS",
+      "promoted": [
+        "先校核地面格局，再按街段/地块放置建筑与附属构件",
+        "保存文件的放置、道路冲突、接地与局部连接检查",
+        "稳定 ID、绝对变换和同参重跑；避免旧生成器恢复旧坐标",
+        "地面内环/孔洞的原生面积检查"
+      ],
+      "not_promoted": [
+        "任意场地的全自动布局/纠偏引擎",
+        "现状道路与所有照片已一致",
+        "现场测量精度与全场公共步行网络"
+      ],
+      "evidence": "references/practices/ground-placement-20260911.json"
+    }
+  ]
+}

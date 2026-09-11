@@ -1,0 +1,23 @@
+{
+  "drawing_type": "site_plan",
+  "electronic_submission": true,
+  "receiving_authority_adoption": true,
+  "synthetic": true,
+  "coordinate_system_source": "project_convention",
+  "plane_coordinate_system": "LOCAL_ENGINEERING_TEST",
+  "elevation_system": "SYNTHETIC_LOCAL_HEIGHT",
+  "control_points": [[0, 0], [100, 0], [0, 100]],
+  "model_unit": "m",
+  "export_unit": "m",
+  "whole_drawing_block": false,
+  "external_references": 0,
+  "duplicate_lines": 0,
+  "zero_length_lines": 0,
+  "elevated_lines": 40,
+  "anonymous_blocks": 0,
+  "dimension_entities_native": false,
+  "dimension_precision": 2,
+  "layer_mapping_verified": false,
+  "layer_contract_version": null,
+  "note": "故意不合格的负向测试；LOCAL坐标不能用于真实报批。"
+}
