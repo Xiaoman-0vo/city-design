@@ -3,7 +3,7 @@
   "release_status": "ALPHA",
   "verification_date": "2026-09-11",
   "core": "PORTABLE_STANDARD_LIBRARY",
-  "optional_3dm_sdk": "rhino3dm 8.32.2",
+  "optional_3dm_sdk": "rhino3dm distribution 8.32.1 (module reports 8.32.2)",
   "native_application_connections": "USER_CONFIGURED_NOT_BUNDLED",
   "historical_case_reference": "historical-capabilities.json",
   "ground_layout_workflow": "ground-layout-and-placement.md",

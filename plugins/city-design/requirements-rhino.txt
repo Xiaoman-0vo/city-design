@@ -1,2 +1,2 @@
 # Optional SDK for the 3DM example and compatibility export; not needed by core checks.
-rhino3dm==8.32.2
+rhino3dm==8.32.1
