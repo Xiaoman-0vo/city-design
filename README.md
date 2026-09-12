@@ -2,7 +2,7 @@
 
 面向 **Codex** 的城市设计工作流插件：用现场照片、总平面和已有模型组织可编辑的城市分析底模，并保留对象编号、资料依据和检查记录。
 
-当前版本 **0.3.0-alpha.1**。核心检查与合成示例可以独立运行；连接 Rhino、QGIS、AutoCAD 需要另行配置对应软件和工具。实际场地定位与尺寸仍需单独校核。
+当前版本 **0.3.0-alpha.2**。核心检查与合成示例可以独立运行；连接 Rhino、QGIS、AutoCAD 需要另行配置对应软件和工具。实际场地定位与尺寸仍需单独校核。
 
 ## 能做什么
 
@@ -27,7 +27,7 @@ codex plugin add city-design@city-design-public
 
 > 使用 City Design 检查这个场地项目，先核实已有文件，再按地面格局推进模型。
 
-安装插件不会安装三款设计软件或替你配置其连接。首次运行见 [使用说明](plugins/city-design/docs/USAGE.md)。
+安装插件后可使用新增的[连接安装工具与完整说明](plugins/city-design/docs/CONNECTIONS.md)：校验并准备 QGIS 两端组件、生成 Rhino/QGIS 配置、保留现有 MCP 条目并验证连通。Rhino 使用 McNeel 官方组件，QGIS 使用社区组件；AutoCAD 官方 MCP 当前限定 Windows/Autodesk Assistant，不能承诺 Mac/Codex 直接控制。三款软件和许可需自行安装。首次运行见[使用说明](plugins/city-design/docs/USAGE.md)。
 
 ## 先试独立示例
 

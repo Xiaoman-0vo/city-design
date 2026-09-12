@@ -15,6 +15,10 @@ python3 <plugin>/scripts/city_design.py --project ./my-project check-drawing --m
 
 `demo` 无需模型资料、账号或设计软件。它产生合成参数、四栋建筑的 SVG 平面图、制图清单样例与检查记录。再次使用同一输出目录会被拒绝，避免覆盖你的修改。
 
+## 软件连接安装
+
+新增工具：`scripts/connections.py`。按[三软件连接与安装](CONNECTIONS.md)核实官方/社区来源、平台支持，安装 QGIS 两端、生成并注册本机配置，再运行 MCP 检查。已有可用配置会保留。
+
 ## 私人配置
 
 正常检查可直接使用 `--project`。可选的连接配置从高到低选择：`--config` → `CITY_DESIGN_CONFIG` → 插件内的 `config/local-binding.json`。项目路径从 `--project` → `CITY_DESIGN_PROJECT` → 配置中的 `project_root` 选择。

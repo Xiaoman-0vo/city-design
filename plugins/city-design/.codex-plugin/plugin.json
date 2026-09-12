@@ -1,6 +1,6 @@
 {
   "name": "city-design",
-  "version": "0.3.0-alpha.1",
+  "version": "0.3.0-alpha.2",
   "description": "照片辅助的城市分析底模工作流、独立示例、制图清单检查与 Rhino 8 兼容导出。实验版。",
   "author": {
     "name": "City Design"

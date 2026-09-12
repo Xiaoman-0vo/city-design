@@ -22,6 +22,7 @@ jobs:
       - run: python -m ruff check .
       - run: python -m ruff format --check .
       - run: python tools/check_release.py
+      - run: python plugins/city-design/scripts/connections.py catalog
       - run: python plugins/city-design/scripts/city_design.py demo --output demo-project
   rhino-sdk:
     runs-on: ubuntu-latest

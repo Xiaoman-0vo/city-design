@@ -1,0 +1,64 @@
+{
+  "checked_on": "2026-09-12",
+  "scope": "Dependency acquisition, local MCP configuration and connection verification; native applications licensed separately",
+  "components": [
+    {
+      "id": "rhino",
+      "name": "Rhino-MCP-Platform",
+      "publisher": "Robert McNeel & Associates / mcneel",
+      "provenance": "VENDOR_OFFICIAL",
+      "license": "MIT (upstream source); Rhino application licensed separately",
+      "source": "https://github.com/mcneel/RhinoAI",
+      "setup": "https://github.com/mcneel/RhinoAI/blob/rhino-9.x/docs/content/docs/getting-started/codex.md",
+      "platforms": ["Windows", "macOS"],
+      "rhino_versions": [8, 9],
+      "local_reference_version": "0.1.5; installation snapshot, not a latest-version promise",
+      "installation": "Rhino PackageManager > Rhino-MCP-Platform; MCPConnect supplies router path",
+      "codex_support": "UPSTREAM_DOCUMENTED",
+      "distributed_in_city_design": "Setup adapter and documentation, not vendor binaries"
+    },
+    {
+      "id": "qgis",
+      "name": "QGIS MCP",
+      "publisher": "nkarasiak/qgis-mcp contributors",
+      "provenance": "COMMUNITY_LISTED_IN_QGIS_PLUGIN_REPOSITORY",
+      "license": "GPL-2.0",
+      "source": "https://github.com/nkarasiak/qgis-mcp",
+      "plugin_listing": "https://plugins.qgis.org/plugins/qgis_mcp_plugin/",
+      "pinned_commit": "29931a0eea80bf30a40b0b18ca6c60a8191521b6",
+      "version": "0.14.0 source snapshot; plugin listing may lag",
+      "python_minimum_external_server": "3.12",
+      "qgis_minimum": "3.28",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "codex_support": "UPSTREAM_DOCUMENTED",
+      "distributed_in_city_design": "Checksum-verified downloader, separate upstream plugin ZIP and server installation, private-token launcher"
+    },
+    {
+      "id": "autocad",
+      "name": "Autodesk AutoCAD and Civil 3D MCP Server",
+      "publisher": "Autodesk",
+      "provenance": "VENDOR_OFFICIAL",
+      "license": "Autodesk product terms; not redistributed",
+      "source": "https://help.autodesk.com/view/ADSKMCP/ENU/?guid=ADSKMCP_AutoCADCivil3DMcp_autodesk_autocad_civil_3d_mcp_html",
+      "platforms": ["Windows"],
+      "supported_client": "Autodesk Assistant with Tech Preview enabled",
+      "autocad_access": "Read and analysis tools; Civil 3D additionally exposes write tools",
+      "commands": ["MCPHTTPSTART", "MCPCONFIG", "MCPHTTPSTOP"],
+      "codex_support": "NOT_ESTABLISHED_BY_PRODUCT_DOCUMENTATION",
+      "mac_autocad_2024": "NOT_SUPPORTED_BY_THIS_OFFICIAL_ROUTE",
+      "distributed_in_city_design": "Platform-aware installation and acceptance instructions; no invented Codex drawing endpoint"
+    },
+    {
+      "id": "autodesk-help",
+      "name": "Autodesk Product Help MCP",
+      "publisher": "Autodesk",
+      "provenance": "VENDOR_OFFICIAL",
+      "source": "https://help.autodesk.com/view/ADSKMCP/ENU/?guid=ADSKMCP_KnowledgeMcp_autodesk_product_help_mcp_server_html",
+      "url": "https://developer.api.autodesk.com/knowledge/public/v1/mcp",
+      "transport": "Streamable HTTP",
+      "auth_required": false,
+      "scope": "Documentation lookup only; cannot inspect or modify local DWG files",
+      "distributed_in_city_design": "Optional Codex registration"
+    }
+  ]
+}

@@ -1,14 +1,22 @@
 # 验证记录
 
-验证日期：2026-09-11。版本：0.3.0-alpha.1。
+验证日期：2026-09-12。版本：0.3.0-alpha.2。
 
 ## 本机已执行
 
-- macOS / Python 3.13：19 项核心检查通过，依赖 Python 标准库。
-- 在全新环境安装 PyPI 发行包 rhino3dm 8.32.1 后：合计 31 项测试通过，包含 12 项 3DM 示例、导出与失败恢复检查。此发行包内部 `rhino3dm.__version__` 返回 8.32.2；依赖声明使用发行包版本，可用 `importlib.metadata.version("rhino3dm")` 核对。
-- 未安装可选 SDK 时：19 项核心检查通过，12 项 SDK 检查明确跳过。
+- macOS / Python 3.13：30 项核心检查通过，依赖 Python 标准库。
+- 在全新环境安装 PyPI 发行包 rhino3dm 8.32.1 后：合计 42 项测试通过，包含 12 项 3DM 示例、导出与失败恢复检查。此发行包内部 `rhino3dm.__version__` 返回 8.32.2；依赖声明使用发行包版本，可用 `importlib.metadata.version("rhino3dm")` 核对。
+- 未安装可选 SDK 时：30 项核心检查通过，12 项 SDK 检查明确跳过。
 - 两个技能结构与插件清单通过 Codex 提供的验证器。
 - 独立示例从自编参数生成四栋建筑、SVG 平面图和检查记录；可选生成两个 Rhino 8 文件，保存后重新读取核对编号、楼层、单位与几何。
+
+## 连接工具验证
+
+- 在新目录下载固定提交的 QGIS MCP 源码，SHA-256 校验通过，`uv sync --frozen --no-dev` 安装成功，内部插件 ZIP 与外部服务来自同一版本；未替换本机 QGIS profile。
+- 连接配置生成与 TOML 回读通过；令牌值未进入生成配置。已有 Rhino/QGIS MCP 条目被保留。新增 11 项测试覆盖备份、仅添加缺项、重跑、路径/归档校验和版本不匹配。
+- 使用新装上游服务与模拟 QGIS socket 完成真实 MCP 初始化、118 个工具发现、ping 和 diagnose。模拟测试不代表 QGIS 桌面验收。
+- 本机检查：Rhino 现有路由器返回空实例列表；QGIS 服务未运行时连接检查返回不可用。未据此声称三款原生软件已完成连通验收。
+- AutoCAD 官方路线以产品文档的 Windows/Autodesk Assistant 范围为准；当前 Mac AutoCAD 2024 不适用，未虚构 Codex 绘图端点。
 
 ## 保留的真实模型回归记录
 

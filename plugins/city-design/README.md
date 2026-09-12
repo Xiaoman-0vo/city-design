@@ -13,3 +13,5 @@
 核心工具使用 Python 标准库；3DM 功能需要可选的 `requirements-rhino.txt`。软件连接需使用者配置，历史私人适配器未包含。保持可编辑原件并核对目标软件中的结果。
 
 MIT 许可证见 [LICENSE](LICENSE)。不分发私人场地照片、模型、凭证或第三方标准全文。
+
+连接安装与平台限制见 [CONNECTIONS.md](docs/CONNECTIONS.md)，支持固定来源准备 QGIS 两端、生成 Rhino 配置、保留已有 MCP 注册并核对连接。
