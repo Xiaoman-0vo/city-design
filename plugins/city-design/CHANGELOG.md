@@ -1,3 +1,9 @@
+# Unreleased — site analysis maps
+
+- Add a site-analysis-maps skill for native-pixel RGB vegetation grids, building-only VGA and model-ground winter/summer direct-sun duration.
+- Add reusable RGB-mask aggregation and transparent grid-plate helpers, configurable crop/opacity, white buildings and a coordinated blue/red palette.
+- Record real-case numerical and output checks while keeping survey accuracy, vegetation seasonality and measured access/irradiance outside the validated claims.
+
 # 0.3.0-alpha.2 — 连接安装工具
 
 - 核实并区分 Rhino 官方 MCP、QGIS 社区 MCP、AutoCAD 官方 Windows/Assistant 路线与 Autodesk 文档服务。

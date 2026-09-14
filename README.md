@@ -56,6 +56,7 @@ python3 plugins/city-design/scripts/city_design.py export-rhino8 source.3dm outp
 
 - [验证记录](plugins/city-design/docs/VALIDATION.md)：区分本机执行、自动测试和未验证项目。
 - [工作流技能](plugins/city-design/skills/design-workflow/SKILL.md)：代理如何组织操作与判断。
+- [场地分析制图](plugins/city-design/skills/site-analysis-maps/SKILL.md)：RGB 绿色像元网格、建筑障碍 VGA、冬夏至模型日照；保留原始指标并输出透明图件。可选制图依赖见 `plugins/city-design/requirements-maps.txt`。
 - [交付与恢复](plugins/city-design/references/delivery-and-recovery.md)：版本、保存冲突、用户修改与导出核对。
 - [贡献说明](CONTRIBUTING.md)：如何报告可复现问题、提交新能力及保留适用边界。
 

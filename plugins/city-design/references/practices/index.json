@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-09-11",
+  "updated_on": "2026-09-15",
   "method": "Promote only capabilities supported by retained inputs, native outputs and checks.",
   "cases": [
     {
@@ -78,6 +78,25 @@
         "现场测量精度与全场公共步行网络"
       ],
       "evidence": "references/practices/ground-placement-20260911.json"
+    },
+    {
+      "id": "PRACTICE-20260915-ANALYSIS-MAPS",
+      "title": "RGB植被网格、建筑遮挡VGA与模型日照制图",
+      "scope": "保留输入与坐标身份的真实项目计算；可复用透明网格制图辅助程序",
+      "result": "CASE_VALIDATED_NUMERICS_AND_EXPORTED_FILES",
+      "promoted": [
+        "原始有效像元分母与网格精确汇总",
+        "建筑唯一障碍的原生VGA及独立核查",
+        "模型块变换、真实北方向与地面高度的日照计算核查",
+        "固定跨季色标、透明导出、白色建筑与可配置配色裁切"
+      ],
+      "not_promoted": [
+        "自动识别所有CAD建筑轮廓",
+        "测量精度、天气实测日照或辐照度",
+        "未配准资料自动叠加",
+        "树冠季相或法规合规结论"
+      ],
+      "evidence": "references/practices/analysis-maps-20260915.json"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "version": "0.3.0-alpha.2",
   "release_status": "ALPHA",
-  "verification_date": "2026-09-12",
+  "verification_date": "2026-09-15",
   "core": "PORTABLE_STANDARD_LIBRARY",
   "optional_3dm_sdk": "rhino3dm distribution 8.32.1 (module reports 8.32.2)",
   "native_application_connections": "OPTIONAL_SETUP_TOOLKIT_WITH_PLATFORM_LIMITS",
@@ -17,5 +17,23 @@
   ],
   "offline_test_receipt": "docs/VALIDATION.md",
   "connection_guide": "docs/CONNECTIONS.md",
-  "connection_registry": "references/connections.json"
+  "connection_registry": "references/connections.json",
+  "site_analysis_maps": {
+    "skill": "skills/site-analysis-maps/SKILL.md",
+    "status": "CASE_VALIDATED_CALCULATIONS_AND_STATIC_EXPORT",
+    "portable_helpers": [
+      "RGB mask aggregation",
+      "transparent regular-grid plates"
+    ],
+    "guided_native_methods": [
+      "building-only depthmapX VGA",
+      "model-ground geometric solstice exposure"
+    ],
+    "case": "references/practices/analysis-maps-20260915.json",
+    "limits": [
+      "No universal CAD building recognition",
+      "No measured vegetation/irradiance or survey accuracy",
+      "Model geometry, missing context and tree seasonality remain explicit assumptions"
+    ]
+  }
 }

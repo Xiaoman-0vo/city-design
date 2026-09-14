@@ -42,6 +42,10 @@ This is an agent workflow requirement with case-supported project checks; the pl
 
 Read `../../references/photo-site-reconstruction.md` when photographs constrain an existing site's geometry or camera views. Preserve original metadata through image transformations, keep each exposure's pose independent, and judge acceptance using the user's requested photo/model comparison. A saved, valid 3DM and a low feature reprojection error are intermediate evidence, not proof that the photographed space has been reproduced.
 
+## Produce site-analysis maps
+
+For RGB vegetation grids or building-only visibility analysis, read `../site-analysis-maps/SKILL.md`. It separates real calculations from styling, preserves native pixel denominators and graph metrics, and provides transparent static plate export. Use explicit source coordinate frames; a display rotation does not register CAD to Rhino. Winter/summer sunlight maps require the model's location, true-north basis, heights and receiving surfaces, with the same duration scale for both dates.
+
 ## Reproduce an example
 
 For a portable first run, use `../../scripts/city_design.py demo --output <new-directory>`. Add `--with-rhino` when the optional rhino3dm dependency is installed. This creates its own synthetic inputs, preview and checked SDK files; it does not open design applications or establish cross-application acceptance.

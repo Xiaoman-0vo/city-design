@@ -1,0 +1,42 @@
+{
+  "status": "CASE_VALIDATED_WITH_PROJECT_RETAINED_EVIDENCE",
+  "validation_date": "2026-09-15",
+  "source_policy": "Original files, input hashes and native output receipts retained in the project; private scene/image data are not distributed with this plugin.",
+  "rgb_checks": [
+    "Native mask shapes and crop bounds",
+    "No overlap or loss in pixel partition",
+    "Whole-crop denominator and numerator equal cell sums",
+    "Three independently recomputed cells",
+    "Display grayscale does not change original RGB classification"
+  ],
+  "vga_checks": [
+    "Retained native depthmapX graph and CSV",
+    "No calculated centers inside selected buildings",
+    "Three independently calculated visibility-neighbor counts",
+    "All defined HH values checked from mean depth and graph size",
+    "Display crop and opacity leave source metrics unchanged"
+  ],
+  "solar_checks": [
+    "Saved model hash unchanged",
+    "Three non-collinear native placements agree with saved frame",
+    "Recursive instance transforms and cached mesh readback",
+    "Ground receiving surfaces retain exposed negative courtyard levels",
+    "Known box-shadow geometry",
+    "Solar positions checked against another ephemeris",
+    "Independent triangle intersection checks",
+    "Distributed half-time-step sensitivity",
+    "Common receiver set and hour legend for both solstices"
+  ],
+  "export_checks": [
+    "RGBA readback and transparent corners",
+    "Small legend with actual metric units",
+    "PNG and vector PDF retained separately from original calculations",
+    "Root delivery copies checked by hash"
+  ],
+  "scope_limits": [
+    "Photo/model dimensions approximate",
+    "Classified RGB fraction is not NDVI",
+    "VGA is not pedestrian permission or observed flow",
+    "Sunlight is geometric exposure without cloud attenuation; absent context and excluded trees remain unmodelled"
+  ]
+}
